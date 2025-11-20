@@ -178,7 +178,7 @@ void blink(unsigned int times){
 void setup()
 {
   pinMode(LED_BUILTIN, OUTPUT);
-  // Creating a NeuralNetwork with pretrained Weights and Biases
+  // Creates the bases of a NeuralNetwork
   NeuralNetwork NN(IN_EEPROM_ADDRESS);
   // Goes through each row (total of [28-Rows * 28-Pixel])     
   for (unsigned int row = 0; row < 28; row++)
