@@ -15,13 +15,14 @@
 #include <NeuralNetwork.h>
 
 
-// Images of handwritten Numbers\Digits in byte form. 
+// Pretrained int-quantized biases
 const PROGMEM int8_t biases[] = {
   -90 ,-24 ,-66 , 24 ,-41 ,
   -125, 34 ,-112,-40 , 110, 60 ,-95 ,-16 ,
   -126, 13 ,-108,-91 ,-8  , 83 ,-127,-41 , 118, 57
 };
 
+// Pretrained int-quantized weights
 const PROGMEM int8_t weights[] = {
   // Layer 0 -> 1
    127,-125,-19 ,-48 , 59 , 59 , 48 , 50 , 50 , 64 , 64 , 64 , 75 , 73 , 60 , 46 , 50 , 56 , 33 , 26 , 24 , 19 , 24 , 18 , 30 , 25 , 46 ,-65 ,
