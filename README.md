@@ -1,4 +1,4 @@
-# ATtiny85-MNIST-RNATtiny85-EEPROM
+# ATtiny85-MNIST-RNN-EEPROM
 ATtiny85 arduino example, running an RNN MNIST model via the (internal) 512-Byte EEPROM
 
 |||||
