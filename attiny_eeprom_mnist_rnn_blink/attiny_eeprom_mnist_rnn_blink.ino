@@ -170,7 +170,7 @@ void blink(unsigned int times){
   while(true){
     for(int x=0; x<times; x++)
       blink();
-  delay(2000);
+    delay(2000);
   }
 }
 
