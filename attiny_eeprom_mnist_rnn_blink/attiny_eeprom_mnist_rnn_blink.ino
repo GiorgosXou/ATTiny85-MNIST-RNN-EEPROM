@@ -188,7 +188,7 @@ void setup()
   // Blinks as many times as the number we predicted. (repeats after 2 seconds)
   blink(predictedNumber());
 
-  //NN.resetStates(); in reality this line is needed, but since we only Feedfoward one image we are fine.
+  //NN.resetStates(); in reality this line is needed, but since we only Feedfoward one image we are fine. | #define _4_OPTIMIZE 0B10000000
 }
 void loop(){}
 
