@@ -1,0 +1,9 @@
+# NeuralNetwork Library file
+NeuralNetwork.h
+
+# Datasets
+mnist_test.csv
+mnist_train.csv
+
+# Output
+main.o
