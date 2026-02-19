@@ -1,7 +1,6 @@
 #define NumberOf(arg) ((unsigned int) (sizeof (arg) / sizeof (arg [0]))) // calculates the number of layers (in this case 3)
 #define _2_OPTIMIZE 0B00100100 // MULTIPLE_BIASES_PER_LAYER + int8_t quantization
 #define _1_OPTIMIZE 0B10011010 // ... + disabled MSE https://github.com/GiorgosXou/NeuralNetworks#define-macro-properties
-#define IN_EEPROM_ADDRESS 0    // The position at which the NN will be saved at the internal EEPROM
 #define Q_FLOAT_RANGE 2.0      // Our Float32 weights are in the range of [-1,1]
 #define USE_RNN__NB            // Makes (vanilla)-RNN the core-architecture of your NeuralNetwork. (NB = NO_BACKPROP support)
 #define SELU                   // Defines core activation-function of your NeuralNetwork.
@@ -66,10 +65,8 @@ void printResult(const char *type, byte (*images)[28][28], byte *labels, unsigne
 
   // Go through each image
   for (unsigned int i = 0; i < number; i++){
-
     // Go through each row of pixels
     for (unsigned int row = 0; row < 28; row++)
-
       // Feedfowards individually each pixel of the row, and then: returns the output(s).
       for (unsigned int pixel=0; pixel < 28;  pixel++)
         output = NN.FeedForward_Individual(images[i][row][pixel] / 255.0f); // (255 is used to normalize pixels between [0,1])
