@@ -1,7 +1,7 @@
 /*
-  Trained via Tensorflow: 21 epochs | 472 parameters (bytes)
-  Testing  data accuracy: 0.9160 - loss: 0.2740
-  Training data accuracy: 0.9128 - loss: 0.2837
+  Trained via Tensorflow: 472 parameters (bytes)
+  Testing  accuracy: 0.9510 - loss: 0.1618
+  Training accuracy: 0.9528 - loss: 0.1528
 */
 
 #define NumberOf(arg) ((unsigned int) (sizeof (arg) / sizeof (arg [0]))) // calculates the number of layers (in this case 3)
