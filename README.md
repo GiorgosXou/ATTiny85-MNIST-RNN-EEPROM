@@ -1,5 +1,5 @@
 # ATtiny85-MNIST-RNN-EEPROM
-ATtiny85 arduino example, running an RNN MNIST model via the (internal) 512-Byte EEPROM
+ATtiny85 arduino example, running an RNN MNIST model via the (internal) 512-Byte EEPROM with ~95% accuracy.
 
 |||||
 | --- | --- | --- | --- |
@@ -29,7 +29,7 @@ g++ -std=c++11 main.cpp -o main.o -O3 -march=native -ffast-math
 
 <details>
 
-<summary><i>(See also some funny visualizations)</i></summary>
+<summary><i>(See also some funny [old model] visualizations)</i></summary>
 
 ||||
 |:----:|:----:|:----:|
