@@ -21,8 +21,8 @@ cd ./ATTiny85-MNIST-RNN-EEPROM/native_os_testing_example/
 wget https://raw.githubusercontent.com/GiorgosXou/NeuralNetworks/refs/heads/master/src/NeuralNetwork.h
 wget https://python-course.eu/data/mnist/mnist_train.csv
 wget https://python-course.eu/data/mnist/mnist_test.csv
-g++ -std=c++11 main.cpp -o main.o -O3 -march=native -ffast-math
-./main.o
+g++ -std=c++11 main.cpp -o main -O3 -march=native -ffast-math
+./main
 ```
 
 ---
